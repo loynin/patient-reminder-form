@@ -183,7 +183,7 @@ export default {
 }
 .text-input {
     height: 20px;
-    width: 180;
+    width: 160px;
     padding: 10px;
     border: solid;
     border-width: 1px;
