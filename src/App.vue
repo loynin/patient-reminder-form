@@ -1,28 +1,68 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main>
+      <div class="wrapper">
+        <Header/>
+        <SubmitForm/>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+
+import SubmitForm from './components/SubmitForm.vue';
+import Header from './components/Header.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    // eslint-disable-next-line
+    SubmitForm,
+    // eslint-disable-next-line
+    Header,
   },
 };
+console.log(new Date());
 </script>
 
-<style>
+<style lang="scss">
+body {
+  background-color: black;
+  color: #6c727b;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: white;
+  margin: 0;
 }
+
+main {
+  margin: 0 auto;
+  background-color: white;
+  max-width: 800px;
+  min-height: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.wrapper {
+  padding: 20px;
+}
+@media only screen and (max-width: $mobile-screen) {
+  body {
+    background: black;
+    margin: 0;
+  }
+  #app {
+    background: white;
+    margin: 5px;
+  }
+  main {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 </style>
