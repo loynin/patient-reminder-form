@@ -21,15 +21,14 @@ export default {
     text-align: left;
     width: 500px;
 }
-
+.description {
+  padding: 20px;
+  color: red;
+}
 @media only screen and (max-width: $mobile-screen) {
 .home {
     text-align: left;
     width: 100%;
-}
-.description {
-  padding: 20px;
-  color: red;
 }
 }
 </style>
